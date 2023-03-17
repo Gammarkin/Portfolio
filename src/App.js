@@ -1,16 +1,23 @@
 import React from 'react';
-import ThemeProvider from './context/ThemeProvider';
 import Header from './components/Header';
+import Home from './components/Home';
 import Introduction from './components/Introduction';
+import Contact from './components/Contact';
+import About from './components/About';
+import Footer from './components/Footer';
 
 import './scss/index.css'
 
 function App() {
   return (
-    <ThemeProvider>
+    <main className='main__component'>
         <Header />
+        <Home />
         <Introduction />
-    </ThemeProvider>
+        <About />
+        <Contact />
+        <Footer />
+    </main>
   );
 }
 

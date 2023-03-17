@@ -1,0 +1,15 @@
+%scroll_component {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+  display: none;
+  }
+}
+.main__component {
+  @extend %scroll_component;
+  background-image: url('../assets/textures/papers.co-sa79-wallpaper-space-blue-blur-36-3840x2400-4k-wallpaper.jpg');
+}

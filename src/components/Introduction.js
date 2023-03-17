@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Introduction() {
     return (
-       <main>
-        
-       </main>     
+       <section className="intro__container">
+        test
+       </section>     
       )
     }
