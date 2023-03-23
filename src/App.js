@@ -11,12 +11,12 @@ import './scss/index.css'
 function App() {
   return (
     <main className='main__component'>
-        <Header />
-        <Home />
-        <Introduction />
-        <About />
-        <Contact />
-        <Footer />
+      <Header />
+      <Introduction />
+      <Home />
+      <About />
+      <Contact />
+      <Footer />
     </main>
   );
 }
