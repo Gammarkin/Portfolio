@@ -1,12 +1,11 @@
 import React, { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
 import * as THREE from 'three';
 
 const colors = [0x4b0082, 0xffd700, 0x6549C0]
 
-function Particles() {
-    const groupRef = useRef()
+const Particles = () => {
+    const groupRef = useRef();
 
     useFrame(() => {
         groupRef.current.rotation.x += 0.001
@@ -25,7 +24,7 @@ function Particles() {
                     ]}
                     rotation={[0, 0, 0]}
                 >
-                    <tetrahedronBufferGeometry attach="geometry" args={[4, 0]} />
+                    <tetrahedronGeometry attach="geometry" args={[4, 0]} />
                     <meshPhongMaterial
                         attach="material"
                         color={colors[Math.floor(Math.random() * colors.length)]}
@@ -37,7 +36,7 @@ function Particles() {
     )
 }
 
-function Saturn() {
+const Saturn = () => {
     const groupRef = useRef()
 
     useFrame(() => {
@@ -47,7 +46,7 @@ function Saturn() {
     return (
         <group ref={groupRef}>
             <mesh position={[0, 40, 0]}>
-                <icosahedronBufferGeometry attach="geometry" args={[180, 1]} />
+                <icosahedronGeometry attach="geometry" args={[180, 1]} />
                 <meshPhongMaterial
                     attach="material"
                     color={0xB8A97E}
@@ -58,34 +57,35 @@ function Saturn() {
             { /* Saturn Rings */}
 
             <mesh position={[0, 40, 0]} rotation={[THREE.MathUtils.degToRad(80), 0, 0]}>
-                <torusBufferGeometry attach="geometry" args={[240, 12, 6, 15]} />
+                <torusGeometry attach="geometry" args={[240, 12, 6, 15]} />
                 <meshStandardMaterial
                     attach="material"
                     color={0x65617D}
                     flatShading
                 />
             </mesh>
-        </group>
+        </group >
     )
 }
 
-function Scene() {
-    return (
-        <Canvas
-            style={{ width: '100%', height: '100%' }}
-            camera={{ position: [0, 100, 600], fov: 60, rotation: [0, 0, 0] }}
-            onCreated={({ gl }) => {
-                gl.shadowMap.enabled = true
-                gl.shadowMap.type = THREE.PCFSoftShadowMap
-            }}
-        >
-            <ambientLight />
-            <directionalLight position={[200, 100, 200]} castShadow />
-            <Particles />
-            <Saturn />
-            <OrbitControls enableZoom={false} />
-        </Canvas>
-    )
-}
+const Scene = () => (
+    <Canvas
+        style={{
+            height: '70%',
+            width: '100%',
+            pointerEvents: 'none',
+        }}
+        camera={{ position: [0, 100, 600], fov: 50, rotation: [0, 0, 0] }}
+        onCreated={({ gl }) => {
+            gl.shadowMap.enabled = true
+            gl.shadowMap.type = THREE.PCFSoftShadowMap
+        }}
+    >
+        <ambientLight />
+        <directionalLight position={[200, 100, 200]} castShadow />
+        <Particles />
+        <Saturn />
+    </Canvas>
+)
 
 export default Scene;
