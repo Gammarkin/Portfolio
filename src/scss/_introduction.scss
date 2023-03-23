@@ -1,5 +1,22 @@
 .intro__container {
-    @extend %scroll_component;
-    background-color: transparent;
-    color: $white-f400;
+	@extend %scroll_component;
+	background-color: transparent;
+	color: $white-f400;
+}
+
+.intro__message_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.intro__message {
+	@extend %intro__message;
+	margin: 1rem 2.4rem;
+}
+
+.intro__message_dark {
+	@extend %intro__message;
+	color: $black-900;
+	margin: 0.1rem 2rem;
 }
