@@ -1,0 +1,16 @@
+%intro__message {
+	font-family: $dev-font;
+	font-size: 3rem;
+}
+
+%scroll_component {
+	height: 100vh;
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+	scrollbar-width: none;
+	overflow-y: auto;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
