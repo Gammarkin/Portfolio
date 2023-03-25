@@ -6,7 +6,7 @@ import Contact from './components/Contact';
 import About from './components/About';
 import Footer from './components/Footer';
 
-import './scss/index.css'
+import './css/index.min.css'
 
 function App() {
   return (
