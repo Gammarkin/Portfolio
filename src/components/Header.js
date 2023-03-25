@@ -18,14 +18,11 @@ export default function Header() {
 
       <ul className="header__link_container">
         <li className="header__link">
-          <HashLink to="/#home">Home</HashLink>
-        </li>
-        <li className="header__link">
           <HashLink to="/#about">Sobre</HashLink>
         </li>
-        <li className="header__link">
-          <HashLink to="/#contact">Contato</HashLink>
-        </li>
+        <HashLink className="header__link link__contact">
+          <li to="/#contact">Contato</li>
+        </HashLink>
       </ul>
     </header>
   );
