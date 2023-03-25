@@ -1,4 +1,15 @@
 .about__container {
-  @extend %scroll_component;
-  color: $white-f400;
+	@extend %scroll_component;
+	color: $white-f400;
+	display: flex;
+	flex-direction: column;
+	align-items: self-start;
+	justify-content: center;
+	margin: 2rem;
+
+	.about__me {
+		font-family: $abt-font;
+		font-size: 2.5rem;
+		margin: 1rem;
+	}
 }
