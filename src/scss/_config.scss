@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
 
-$dev-font: 'Roboto Mono', monospace;
+$dev-font: 'Roboto Mono', monospace, sans-serif;
 $white-f400: rgb(245, 245, 245);
 $hack-f: #0f0;
 $black-900: rgb(212, 216, 159);
 $attack-f: #fd3a4a;
+$abt-font: 'Raleway', monospace, sans-serif;
