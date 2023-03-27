@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div className='about__container' id='about'>
+    <section className='about__container' id='about'>
       <span className='about__me'> Olá, me chamo Marcos. 👋 </span>
       <span className='about__me'>
         Sou um desenvolvedor Full-Stack apaixonado
@@ -10,7 +10,6 @@ export default function About() {
         Me interesso em atuar com desenvolvimento de aplicações que causam impacto.
       </span>
       <span className='about__me'>Alguns projetos em que já atuei:</span>
-
-    </div>
+    </section>
   )
 }
