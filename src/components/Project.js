@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-export default function Projects() {
+export default function Projects({ img, description, link }) {
   return (
-    <div className='home__container'>
-      projects
-    </div>
+    <a href={link} rel='noreferrer' target='_blank' className="project__link">
+      <img src={img} alt={description} className="project__image" />
+    </a>
   )
-}
+};
