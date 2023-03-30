@@ -1,5 +1,46 @@
 .contact__container {
-    @extend %scroll_component;
-    height: 90vh;
-    color: $white-f400;
+	@extend %scroll_component;
+	color: $white-f400;
+	font-family: $dev-font;
+	user-select: none;
+	margin-top: 2rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	.contact__msg {
+		font-size: 1.5rem;
+		font-weight: 300;
+		margin-bottom: 1rem;
+
+		.contact__email {
+			color: $hack-f;
+			text-decoration: none;
+			transition: all 0.3s ease-in-out;
+
+			&:hover {
+				color: $attack-f;
+				transform: scale(1.2);
+			}
+		}
+	}
+
+	.contact__links {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.contact__icon {
+			margin: 2rem;
+			transition: all 0.3s ease-in-out;
+			width: 2.5rem;
+
+			&:hover {
+				color: $white-f400;
+				transform: scale(1.2);
+			}
+		}
+	}
 }
