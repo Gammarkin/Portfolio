@@ -20,9 +20,9 @@ export default function Header() {
         <li className="header__link">
           <HashLink to="/#about">Sobre</HashLink>
         </li>
-        <HashLink className="header__link link__contact">
-          <li to="/#contact">Contato</li>
-        </HashLink>
+        <li className="header__link link__contact">
+          <HashLink to="/#contact">Contato</HashLink>
+        </li>
       </ul>
     </header>
   );
