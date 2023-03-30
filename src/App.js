@@ -4,7 +4,6 @@ import Projects from './components/Projects';
 import Introduction from './components/Introduction';
 import Contact from './components/Contact';
 import About from './components/About';
-import Footer from './components/Footer';
 
 import './css/index.min.css'
 
@@ -16,7 +15,6 @@ function App() {
       <About />
       <Projects />
       <Contact />
-      <Footer />
     </main>
   );
 }
