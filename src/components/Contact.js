@@ -24,7 +24,7 @@ export default function Contact() {
         </a>
 
         <a
-          href="github.com/gammarkin"
+          href="https://github.com/gammarkin/"
           target="_blank"
           rel="noopener noreferrer"
         >
