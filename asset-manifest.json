@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.26a8172e.css",
+    "main.js": "/portfolio/static/js/main.0d010dc3.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/recipe-app.png": "/portfolio/static/media/recipe-app.88e18bba13ed579cf846.png",
+    "static/media/front-example-tfc.png": "/portfolio/static/media/front-example-tfc.b3ed6f3b366f53735cc2.png",
+    "static/media/papers.co-sa79-wallpaper-space-blue-blur-36-3840x2400-4k-wallpaper.jpg": "/portfolio/static/media/papers.co-sa79-wallpaper-space-blue-blur-36-3840x2400-4k-wallpaper.bdf83d7d3c92850e6d93.jpg",
+    "static/media/dicey.png": "/portfolio/static/media/dicey.c60651aeffa38e60b110.png",
+    "static/media/linkedin.png": "/portfolio/static/media/linkedin.032cf8a63be2f0f4d425.png",
+    "index.html": "/portfolio/index.html",
+    "main.26a8172e.css.map": "/portfolio/static/css/main.26a8172e.css.map",
+    "main.0d010dc3.js.map": "/portfolio/static/js/main.0d010dc3.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26a8172e.css",
+    "static/js/main.0d010dc3.js"
+  ]
+}
