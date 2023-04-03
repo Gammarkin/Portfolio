@@ -12,8 +12,9 @@ export default function Projects() {
                             key={index}
                             img={project.image}
                             link={project.link}
-                            alt={project.description}
+                            description={project.description}
                             title={project.title}
+                            planet={project.planet}
                         />
                     )
                 })
