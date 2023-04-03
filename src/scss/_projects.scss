@@ -10,10 +10,13 @@
 	align-items: center;
 	justify-content: center;
 	transition: all 0.3s ease-in-out;
+}
 
-	&:hover {
-		color: $white-f400;
-		transform: scale(1.1);
-		margin: auto;
-	}
+.planet__name {
+	@extend %planet_text;
+}
+
+.planet__desc {
+	@extend %planet_text;
+	margin: 1rem;
 }
