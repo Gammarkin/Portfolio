@@ -4,7 +4,7 @@ import * as THREE from 'three';
 
 const colors = [0x4b0082, 0xffd700, 0x6549C0]
 
-const Particles = () => {
+export const Particles = () => {
     const groupRef = useRef();
 
     useFrame(() => {
