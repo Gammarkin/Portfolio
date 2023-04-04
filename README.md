@@ -1,2 +1,3 @@
-# portfolio made with 3js
-and react
+# Portfolio
+
+Gammarkin's portfolio made with react, sass and threejs for 3d models
