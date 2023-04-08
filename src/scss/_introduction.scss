@@ -7,11 +7,15 @@
 .intro__message_container {
 	display: flex;
 	flex-direction: column;
+	user-select: none;
 	justify-content: center;
 }
 
 .intro__message {
 	@extend %intro__message;
 	margin: 1rem 2.4rem;
-	user-select: none;
+
+	@media screen and (max-width: 768px) {
+		margin: 2rem 0.5rem;
+	}
 }
