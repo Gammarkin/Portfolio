@@ -31,6 +31,10 @@
 				text-decoration: underline 0.08em rgba(0, 0, 0, 0);
 				transition: text-decoration-color 15s ease-in-out;
 			}
+
+			@media screen and (max-width: 670px) {
+				color: $hack-f;
+			}
 		}
 	}
 
@@ -39,6 +43,11 @@
 		justify-content: space-between;
 		height: 3rem;
 		align-items: center;
+
+		@media screen and (max-width: 670px) {
+			width: 100%;
+			display: none;
+		}
 
 		.link__contact {
 			background-color: $attack-f;
