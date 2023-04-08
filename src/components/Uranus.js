@@ -18,7 +18,7 @@ const Uranus = () => {
             </mesh>
 
             <mesh position={[10, 0, -100]} rotation={[0, 0, 0]}>
-                <sphereBufferGeometry attach="geometry" args={[10, 22, 32]} />
+                <sphereGeometry attach="geometry" args={[10, 22, 32]} />
                 <meshStandardMaterial attach="material" color={0xffffff} />
             </mesh>
         </group>
